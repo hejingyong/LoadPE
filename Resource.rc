@@ -1,0 +1,500 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOG 0, 0, 340, 212
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoadPE_Q"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "Processes View",IDC_STATIC,7,7,251,198
+    GROUPBOX        "",IDC_STATIC,261,7,72,198
+    PUSHBUTTON      "PE_Edit",IDC_BUTTON_PE_Edit,270,23,55,15
+    PUSHBUTTON      "About",IDC_BUTTON_About,270,159,55,15
+    PUSHBUTTON      "Exit",IDC_BUTTON_Exit,270,180,55,15
+    CONTROL         "List1",IDC_LIST_Process,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,13,15,241,87
+    CONTROL         "List2",IDC_LIST_Moudle,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,13,112,241,87
+    PUSHBUTTON      "Create Shell",IDC_BUTTON_Create_Shell,270,48,55,15
+    PUSHBUTTON      "Inject DLL",IDC_BUTTON_Inject_DLL,271,74,55,15
+END
+
+IDD_DIALOG_Editor DIALOGEX 0, 0, 370, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PE Editor"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_EntryPoint,75,25,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ImageBase,75,45,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SizeOfImage,75,69,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_BaseOfData,75,117,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SectionAlignment,75,142,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_FileAlignment,75,170,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Subsystem,221,25,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NumberOfSections,221,45,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TimeDataStamp,221,69,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Checksum,221,142,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SizeOfOptionalHeader,221,170,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NumberOfRvaAndSize,221,194,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Characteristics,221,117,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Magic,75,194,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    GROUPBOX        "Basic PE Header Information",IDC_STATIC,13,13,278,204
+    GROUPBOX        "",IDC_STATIC,298,13,57,204
+    PUSHBUTTON      "Sections",IDC_BUTTON_Sections,304,32,46,14
+    PUSHBUTTON      "Directories",IDC_BUTTON_Directories,304,57,46,14
+    PUSHBUTTON      "Close",IDC_BUTTON_Close,304,82,46,14
+    LTEXT           "EntryPoint:",IDC_STATIC_EntryPoint,16,25,37,12
+    LTEXT           "ImageBase:",IDC_STATIC_ImageBase,16,45,40,12
+    LTEXT           "SizeOfImage:",IDC_STATIC_SizeOfImage,16,69,45,12
+    LTEXT           "BaseOfCode:",IDC_STATIC_BaseOfCode,16,94,44,12
+    LTEXT           "BaseOfData:",IDC_STATIC_BaseOfData,16,117,42,12
+    LTEXT           "SectionAlignment:",IDC_STATIC_SectionAlignment,16,142,59,12
+    LTEXT           "FileAlignment:",IDC_STATIC_FileAlignment,16,170,47,12
+    LTEXT           "Magic:",IDC_STATIC_Magic,16,194,23,12
+    EDITTEXT        IDC_EDIT_BaseOfCode,74,94,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_SizeOfHeaders,221,94,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "Subsystem:",IDC_STATIC_Subsystem,143,25,40,12
+    LTEXT           "NumberOfSections:",IDC_STATIC_NumberOfSections,143,45,64,12
+    LTEXT           "TimeDataStamp:",IDC_STATIC_TimeDataStamp,143,69,55,12
+    LTEXT           "SizeOfHeaders:",IDC_STATIC_SizeOfHeaders,143,94,52,12
+    LTEXT           "Characteristics:",IDC_STATIC_Characteristics,143,117,52,12
+    LTEXT           "Checksum:",IDC_STATIC_Checksum,143,142,37,12
+    LTEXT           "SizeOfOptionalHeader:",IDC_STATIC_SizeOfOptionalHeader,143,170,75,12
+    LTEXT           "NumberOfRvaAndSize:",IDC_STATIC_NumberOfRvaAndSize,143,194,75,12
+END
+
+IDD_DIALOG_SectionTable DIALOG 0, 0, 336, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[Section Table]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,322,108
+    CONTROL         "List2",IDC_LIST_SectionTable,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,11,322,104
+END
+
+IDD_DIALOG_DirectoryTable DIALOGEX 0, 0, 312, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[Directory Table]"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Directory Information",IDC_STATIC,7,7,234,320
+    GROUPBOX        "",IDC_STATIC,246,7,59,320
+    LTEXT           "ExportTable:",IDC_STATIC_ExportTable,16,34,44,12
+    LTEXT           "Resource:",IDC_STATIC_Resource,16,68,44,12
+    LTEXT           "Exception:",IDC_STATIC_Exception,16,84,44,12
+    LTEXT           "Security:",IDC_STATIC_Security,16,103,44,12
+    LTEXT           "Relocation:",IDC_STATIC_Relocation,16,121,44,12
+    LTEXT           "Debug:",IDC_STATIC_Debug,16,140,44,12
+    LTEXT           "Copyright:",IDC_STATIC_Copyright,16,157,44,12
+    LTEXT           "Globalptr:",IDC_STATIC_Globalptr,16,175,44,12
+    LTEXT           "TlsTable:",IDC_STATIC_TlsTable,16,192,44,12
+    LTEXT           "LoadConfig:",IDC_STATIC_LoadConfig,16,212,44,12
+    LTEXT           "BoundImport:",IDC_STATIC_BoundImport,16,231,44,12
+    LTEXT           "IAT:",IDC_STATIC_IAT,16,249,44,12
+    LTEXT           "DelayImport:",IDC_STATIC_DelayImport,16,268,44,12
+    LTEXT           "ImprotTable:",IDC_STATIC_ImprotTable,16,51,44,12
+    LTEXT           "COM:",IDC_STATIC_COM,16,289,44,12
+    LTEXT           "Reserved:",IDC_STATIC_Reserved,16,306,44,12
+    EDITTEXT        IDC_EDIT_ExportTable_RAV,66,34,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Copyright_RAV,66,157,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_COM_RAV,66,289,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DelayImport_RAV,66,268,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ImprotTable_RAV,66,51,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_IAT_RAV,66,249,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Reserved_RAV,66,306,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Resource_RAV,66,68,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Exception_RAV,66,84,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Security_RAV,66,103,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Relocation_RAV,66,121,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Debug_RAV,66,140,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TlsTable_RAV,66,192,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Globalptr_RAV,66,175,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_LoadConfig_RAV,66,212,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_BoundImport_RAV,66,231,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ExportTable_Size,132,34,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Copyright_Size,132,157,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_COM_Size,132,289,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DelayImport_Size,132,268,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_ImprotTable_Size,132,51,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_IAT_Size,132,249,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Reserved_Size,132,306,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Resource_Size,132,68,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Exception_Size,132,84,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Security_Size,132,103,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Relocation_Size,132,121,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Debug_Size,132,140,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TlsTable_Size,132,192,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Globalptr_Size,132,175,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_LoadConfig_Size,132,212,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_BoundImport_Size,132,231,60,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,254,20,45,14
+    LTEXT           "RAV",IDC_STATIC,84,23,22,8
+    LTEXT           "Size",IDC_STATIC,146,22,22,8
+    PUSHBUTTON      "...",IDC_BUTTON_ExportTable_Detail,197,34,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_ImprotTable_Detail,197,50,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_ResourceTable_Detail,197,66,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_COM_Detail,197,289,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_TlsTable_Detail,197,192,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_Relocation_Detail,197,121,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_BoundImport_Detail,197,231,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_Debug_Detail,197,140,13,12
+    PUSHBUTTON      "...",IDC_BUTTON_Copyright_Detail,197,157,13,12
+END
+
+IDD_DIALOG_About DIALOG 0, 0, 175, 88
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[About]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "App Information",IDC_STATIC,7,7,161,74
+    LTEXT           "             本程序包含PE文件解析功能，所涉及的内容仅供学习使用，不得用于非法目的。",IDC_STATIC,11,21,154,33
+    LTEXT           "软件版权归Q所有。",IDC_STATIC,96,68,72,13
+END
+
+IDD_DIALOG_ImportTable_Detail DIALOG 0, 0, 352, 165
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[ImportTable Detail Information]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,338,151
+    CONTROL         "List1",IDC_LIST_DLL_List,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,11,14,329,67
+    CONTROL         "List2",IDC_LIST_API_List,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,10,87,329,65
+END
+
+IDD_DIALOG_ExportTable_Detail DIALOGEX 0, 0, 333, 205
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[ExportTable Detail Information]"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Export Information",IDC_STATIC,7,7,319,105
+    LTEXT           "AddressOfNameOrdinals:",IDC_STATIC,166,92,83,8
+    LTEXT           "AddressOfNames:",IDC_STATIC,166,74,60,12
+    LTEXT           "AddressOfFunctions:",IDC_STATIC,166,55,68,12
+    LTEXT           "NumberOfNames:",IDC_STATIC,166,36,59,12
+    LTEXT           "NumberOfFunctions:",IDC_STATIC,166,17,67,12
+    LTEXT           "Name String:",IDC_STATIC,14,92,43,8
+    LTEXT           "Name:",IDC_STATIC,14,74,22,12
+    LTEXT           "Base:",IDC_STATIC,14,55,20,12
+    LTEXT           "Characteristics:",IDC_STATIC,14,36,52,12
+    LTEXT           "Offset to Export Table:",IDC_STATIC,14,17,73,12
+    EDITTEXT        IDC_EDIT_ExportTable_Offset,92,17,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Characteristics,92,36,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Base,92,55,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_Name,92,74,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NameString,70,92,76,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NumberOfFunctions,262,17,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NumberOfNames,262,36,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_AddressOfFunctions,262,55,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_AddressOfNames,262,74,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_AddressOfNameOrdinals,262,92,54,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    CONTROL         "List3",IDC_LIST_TableList,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,111,319,87
+END
+
+IDD_DIALOG_RelocationTable_Detail DIALOG 0, 0, 371, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[RelocationTable Detail Information]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "Blocks",IDC_STATIC,10,7,351,94
+    GROUPBOX        "Block Item",IDC_STATIC,10,102,351,99
+    CONTROL         "List1",IDC_LIST_Blocks,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,13,17,345,80
+    CONTROL         "List2",IDC_LIST_BlockItem,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,13,113,345,84
+END
+
+IDD_DIALOG_ResourceTable_Detail DIALOGEX 0, 0, 269, 219
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[ResourceTable Detail Information]"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_Resource,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,13,17,132,187
+    GROUPBOX        "Resource Information",IDC_STATIC,7,7,255,205
+    GROUPBOX        "Root Directory",IDC_STATIC,152,19,106,48
+    GROUPBOX        "Selected Directory",IDC_STATIC,152,74,106,48
+    GROUPBOX        "Selected Item",IDC_STATIC,152,129,106,73
+    LTEXT           "Name Entries:",IDC_STATIC,159,31,47,8
+    LTEXT           "ID Entries:",IDC_STATIC,159,50,35,8
+    EDITTEXT        IDC_EDIT_RootName,209,28,45,13,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_RootID,209,47,45,13,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "Name Entries:",IDC_STATIC,156,87,47,8
+    LTEXT           "ID Entries:",IDC_STATIC,156,106,35,8
+    EDITTEXT        IDC_EDIT3,209,84,45,13,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT4,209,103,45,13,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "RAV:",IDC_STATIC,161,145,16,8
+    LTEXT           "Offset:",IDC_STATIC,161,162,22,8
+    LTEXT           "Size:",IDC_STATIC,161,181,18,8
+    EDITTEXT        IDC_EDIT5,195,141,52,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT6,195,158,52,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT7,195,178,52,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+END
+
+IDD_DIALOG_BoundImport_Detail DIALOG 0, 0, 266, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[BoundImport Detail Information]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,252,153
+    CONTROL         "Tree1",IDC_TREE_BoundImport,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,13,17,241,136
+END
+
+IDD_DIALOG_DebugTable_Detail DIALOG 0, 0, 349, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[DebugTable Detail Information]"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,335,81
+    CONTROL         "List1",IDC_LIST_DebugTable,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,10,13,329,69
+END
+
+IDD_DIALOG_TLS_Detail DIALOGEX 0, 0, 253, 144
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[TLS Table Detail]"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,189,18,45,14
+    GROUPBOX        "TLS Detail Information",IDC_STATIC,7,7,171,130
+    LTEXT           "StartAddressOfRawData:",IDC_STATIC,13,23,81,14
+    EDITTEXT        IDC_EDIT_StartAddressOfRawData,104,22,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "EndAddressOfRawData:",IDC_STATIC,13,42,81,14
+    EDITTEXT        IDC_EDIT_EndAddressOfRawData,104,41,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "AddressOfIndex:",IDC_STATIC,13,61,81,14
+    EDITTEXT        IDC_EDIT_AddressOfIndex,104,60,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "AddressOfCallBacks:",IDC_STATIC,13,78,81,14
+    EDITTEXT        IDC_EDIT_AddressOfCallBacks,104,77,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "SizeOfZeroFill:",IDC_STATIC,13,97,81,14
+    EDITTEXT        IDC_EDIT_SizeOfZeroFill,104,96,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    LTEXT           "Characteristics:",IDC_STATIC,13,116,81,14
+    EDITTEXT        IDC_EDIT_Characteristics,104,115,67,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+END
+
+IDD_DIALOG_CreateShell DIALOG 0, 0, 241, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[软件加壳]"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_ShellPath,68,27,116,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FilePath,68,54,116,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,227,101
+    PUSHBUTTON      "......",IDC_BUTTON_ShellPath,196,27,22,14
+    PUSHBUTTON      "......",IDC_BUTTON_FilePath,196,54,22,14
+    PUSHBUTTON      "加壳",IDC_BUTTON_CreateShell,119,86,47,15
+    GROUPBOX        "",IDC_STATIC,16,16,208,63
+    LTEXT           "ShellPath：",IDC_STATIC,21,27,40,14
+    LTEXT           "FilePath:",IDC_STATIC,21,56,30,14
+    PUSHBUTTON      "Exit",IDC_BUTTON_Exit,175,86,47,15
+END
+
+IDD_DIALOG_Inject DIALOGEX 0, 0, 281, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[DLL Inject]"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,267,84
+    LTEXT           "PID:",IDC_STATIC,15,23,15,8
+    EDITTEXT        IDC_EDIT_PID,37,21,40,12,ES_AUTOHSCROLL
+    LTEXT           "PE File:",IDC_STATIC,88,23,26,8
+    EDITTEXT        IDC_EDIT_DLL,117,21,123,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Inject",IDC_BUTTON_Inject,159,72,42,12
+    PUSHBUTTON      "Uninstall",IDC_BUTTON_Uninstall,215,72,42,12
+    PUSHBUTTON      "...",IDC_BUTTON_DLL,246,20,19,12
+    CONTROL         "远程线程",IDC_RADIO_RemoteThread,"Button",BS_AUTORADIOBUTTON,22,49,48,10
+    CONTROL         "隐藏模块(远程线程)",IDC_RADIO_HiddenModule_RemoteThread,"Button",BS_AUTORADIOBUTTON,76,41,84,10
+    CONTROL         "加载进程",IDC_RADIO_LoadProcess,"Button",BS_AUTORADIOBUTTON,165,47,48,10
+    CONTROL         "隐藏模块(挂起线程)",IDC_RADIO_HiddenModule_SuspendThread,"Button",BS_AUTORADIOBUTTON,76,55,84,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG_Editor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DIALOG_SectionTable, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG_DirectoryTable, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_DIALOG_About, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_DIALOG_ImportTable_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+        HORZGUIDE, 25
+    END
+
+    IDD_DIALOG_ExportTable_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_DIALOG_RelocationTable_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DIALOG_ResourceTable_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_DIALOG_BoundImport_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DIALOG_DebugTable_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_TLS_Detail, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_DIALOG_CreateShell, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_Inject, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_Small          ICON                    "small.ico"
+IDI_ICON_Big            ICON                    "big.ico"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
